@@ -1,6 +1,6 @@
-FROM tomcat:8.0.20-jre8
-# Dummy text to test 
-COPY target/myweb*.war /usr/local/tomcat/webapps/myweb.war
+# Pull base image 
+From tomcat:8-jre8 
 
-# Git webhook trigger demo
-# TO test github push trigger
+# Maintainer 
+MAINTAINER "valaxytech@gmail.com" 
+COPY ./*.war /usr/local/tomcat/webapps/
